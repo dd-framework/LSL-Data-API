@@ -25,3 +25,24 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Pyenv Stuff
+/shims
+/version
+/versions
+/sources
+/cache
+/libexec/*.dylib
+/src/Makefile
+/src/*.o
+/bats/
+/default-packages
+.idea
+*.un~
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+src/dumps/

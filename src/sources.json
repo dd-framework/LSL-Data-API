@@ -1,0 +1,62 @@
+{
+	"LSL_Data_API_Controls": {
+		"name": "LSL Data API Actions",
+		"information": "collection of api urls",
+		"explanation": "This Device holds a collection of urls to which api requests can be made. The URLs are endpoints for the LSL Data API and can manipulate the Server's behaviour.",
+		"dataTypes": ["ddURL"],
+		"connection": {
+			"protocol": "REST",
+			"address": "http://localhost:3151/sources/data",
+			"endpoint": "LSL_Data_API_Controls",
+			"method": "GET"
+		}
+	},
+	"LSL_Data_API_Status": {
+		"name": "LSL Data API Status",
+		"information": "collection of status values",
+		"explanation": "This Device holds a collection of status values that inform about the server's current settings",
+		"dataTypes": ["ddStatus"],
+		"connection": {
+			"protocol": "WS",
+			"address": "http://localhost:3151/sources/data",
+			"endpoint": "LSL_Data_API_Status"
+		}
+	},
+
+	"LabRecorder_Actions": {
+		"name": "LabRecorder Actions",
+		"information": "collection of api urls",
+		"explanation": "This Device holds a collection of urls to which api requests can be made. The URLs are endpoints for the LSL Data API and can notify the Server to send requests to a LabRecorder Application running on the same device.",
+		"dataTypes": ["ddURL"],
+		"connection": {
+			"protocol": "REST",
+			"address": "http://localhost:3151/sources/data",
+			"endpoint": "LabRecorder_Actions",
+			"method": "GET"
+		}
+	},
+
+	"LabRecorder_Status": {
+		"name": "LabRecorder Status",
+		"information": "collection of status values",
+		"explanation": "This Device holds a collection of status values that inform about the current settings of the LabRecorder currently connected to the Server.",
+		"dataTypes": ["ddStatus"],
+		"connection": {
+			"protocol": "WS",
+			"address": "http://localhost:3151/sources/data",
+			"endpoint": "LabRecorder_Status"
+		}
+	},
+
+	"Recording_Loaders": {
+		"name": "LSL Data API Recording Loaders",
+		"information": "collection of api urls",
+		"explanation": "This Source holds a collection of urls to which api requests can be made. The URLs are endpoints for the LSL Data API and can notify the Server to purge its currently served Sources and instead load and serve Sources from the associated Recording.",
+		"dataTypes": ["ddURL"],
+		"connection": {
+			"protocol": "WS",
+			"address": "http://localhost:3151/sources/data",
+			"endpoint": "Recording_Loaders"
+		}
+	}
+}

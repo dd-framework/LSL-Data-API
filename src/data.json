@@ -1,0 +1,109 @@
+{
+	"LSL_Data_API_Controls": {
+		"ddURL": {
+			"Scan for Devices": {
+				"url": "http://localhost:3151/sources/scan",
+				"method": "POST"
+			},
+			"Purge Devices": {
+				"url": "http://localhost:3151/sources/purge",
+				"method": "POST"
+			},
+			"Threshold -": {
+				"url": "http://localhost:3151/threshold",
+				"method": "POST",
+				"body": { "amount": -1 }
+			},
+			"Threshold +": {
+				"url": "http://localhost:3151/threshold",
+				"method": "POST",
+				"body": { "amount": 1 }
+			},
+			"Window -": {
+				"url": "http://localhost:3151/window",
+				"method": "POST",
+				"body": { "amount": -1 }
+			},
+			"Window +": {
+				"url": "http://localhost:3151/window",
+				"method": "POST",
+				"body": { "amount": 1 }
+			},
+			"Sending -": {
+				"url": "http://localhost:3151/sending",
+				"method": "POST",
+				"body": { "amount": -1 }
+			},
+			"Sending +": {
+				"url": "http://localhost:3151/sending",
+				"method": "POST",
+				"body": { "amount": 1 }
+			},
+			"Pulling -": {
+				"url": "http://localhost:3151/pulling",
+				"method": "POST",
+				"body": { "amount": -1 }
+			},
+			"Pulling +": {
+				"url": "http://localhost:3151/pulling",
+				"method": "POST",
+				"body": { "amount": 1 }
+			}
+		}
+	},
+
+	"LSL_Data_API_Status": {
+		"ddStatus": {
+			"Sending Interval": 2,
+			"Pulling Timeout": 1.0,
+			"Anomaly Threshold": 5,
+			"Anomaly Window": 100,
+			"Serving": false
+		}
+	},
+
+	"LabRecorder_Actions": {
+		"ddURL": {
+			"Connect LabRecorder": {
+				"url": "http://localhost:3151/labrecorder/connect",
+				"method": "POST"
+			},
+			"Set LabRecorder": {
+				"url": "http://localhost:3151/labrecorder/set",
+				"method": "POST"
+			},
+			"Start LabRecorder": {
+				"url": "http://localhost:3151/labrecorder/start",
+				"method": "POST"
+			},
+			"Stop LabRecorder": {
+				"url": "http://localhost:3151/labrecorder/stop",
+				"method": "POST"
+			}
+		}
+	},
+
+	"LabRecorder_Status": {
+		"ddStatus": {
+			"LabRecorder Connected": false,
+			"LabRecorder Preset": {
+				"task": "MemoryGuided",
+				"run": 1,
+				"participant": "P003",
+				"session": "Session1",
+				"acquisition": "Acq1",
+				"modality": "eeg"
+			}
+		}
+	},
+
+	"Recording_Loaders": {
+		"ddURL": {
+			"Load Dummy": {
+				"url": "http://localhost:3151/load",
+				"method": "POST",
+				"body": { "path": "Dummy Dump" }
+			}
+		}
+	}
+}
